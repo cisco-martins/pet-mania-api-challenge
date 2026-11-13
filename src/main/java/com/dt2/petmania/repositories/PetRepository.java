@@ -1,8 +1,14 @@
 package com.dt2.petmania.repositories;
 
 import com.dt2.petmania.entities.Pet;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
-public class PetRepository extends CrudRepository<Pet, int>{
+public interface PetRepository extends JpaRepository<Pet, Long> {
+
+
 }

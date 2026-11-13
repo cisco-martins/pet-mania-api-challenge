@@ -1,13 +1,12 @@
 package com.dt2.petmania;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PetManiaApplicationTests {
+class PetManiaApplication {
 
-    @Test
-    void contextLoads() {
-    }
+    public static void main(String[] args) { SpringApplication.run(PetManiaApplication.class, args);}
 
 }
